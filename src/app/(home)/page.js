@@ -1,14 +1,10 @@
-
-
-
+import Slider from "./componets/slider/Slider";
 
 export default async function Home() {
   
-  
-  
   return (
-    <main className="min-h-screen" >
-      
+    <main className="" >
+      <Slider/>
     </main>
   )
 }

@@ -10,6 +10,15 @@
     @apply px-2 flex justify-center font-bold items-center gap-x-2 hover:text-blue-600 
   }
   .nav-item{
-    @apply relative px-4 md:px-2 text-white hover:text-black py-[5px] rounded-md uppercase mx-[5px] hover:bg-[#00b3b3] ease-in duration-300 flex flex-col items-center
+    @apply relative px-4 md:px-2 text-white hover:text-black py-[5px] rounded-sm uppercase mx-[5px] hover:bg-[#00b3b3] ease-in duration-300 flex flex-col items-center
+  }
+  .home-hover{
+    @apply bg-[#00b3b3] text-white
+  }
+  .hover-item-container{
+    @apply hidden absolute mt-[30px] ml-2 group-hover:block pt-4 bg-[#19686d] text-white rounded-lg group-hover:ease-in group-hover:duration-300
+  }
+  .route-container{
+    @apply flex flex-col justify-center items-center w-32 h-20 rounded-sm cursor-pointer  bg-[#f1f8e9] text-[#19686d]
   }
 }
