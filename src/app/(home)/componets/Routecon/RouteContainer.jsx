@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function RouteContainer() {
     return (
-        <div className=' grid grid-cols-2 md:grid-cols-2 gap-2 sm:py-2'>
+        <div className=' grid grid-cols-1 md:grid-cols-3 gap-2   w-full sm:py-4'>
             <Link href="/" className='route-container group'>
                 <span className='text-2xl group-hover:scale-120'><FaBullhorn /></span>
                 <p className='text-md font-bold uppercase'>Notice</p>

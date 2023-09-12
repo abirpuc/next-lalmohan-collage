@@ -7,24 +7,6 @@ import 'swiper/css/navigation';
 import SingleSlider from './SingleSlider';
 import { Autoplay, Navigation } from 'swiper/modules';
 
-const slider = [
-    {
-        id: 1,
-        img: '/vercel.svg'
-    },
-    {
-        id: 3,
-        img: '/vercel.svg'
-    },
-    {
-        id: 4,
-        img: '/vercel.svg'
-    },
-    {
-        id: 5,
-        img: '/vercel.svg'
-    },
-]
 export default function SliderContent({ slider }) {
     return (
         <div >

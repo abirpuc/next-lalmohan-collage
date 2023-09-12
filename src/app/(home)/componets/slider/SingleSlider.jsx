@@ -4,8 +4,6 @@ import React from 'react'
 export default function SingleSlider({ item }) {
     const imageName =  item.slider_img
     const setUrl = `/carousel/${imageName}`;
-    console.log(setUrl)
-
     return (
         <div>
             <Image

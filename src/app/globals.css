@@ -19,6 +19,6 @@
     @apply hidden absolute mt-[30px] ml-2 group-hover:block pt-4 bg-[#19686d] text-white rounded-lg group-hover:ease-in group-hover:duration-300
   }
   .route-container{
-    @apply flex flex-col justify-center items-center w-32 h-20 rounded-sm cursor-pointer  bg-[#f1f8e9] text-[#19686d]
+    @apply flex flex-col justify-center items-center w-full md:w-32 h-20 rounded-sm cursor-pointer  bg-[#f1f8e9] text-[#19686d]
   }
 }
