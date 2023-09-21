@@ -12,11 +12,17 @@
   .nav-item{
     @apply relative px-4 md:px-2 text-white hover:text-black py-[5px] rounded-sm uppercase mx-[5px] hover:bg-[#00b3b3] ease-in duration-300 flex flex-col items-center
   }
+  .mobile-nav-item{
+    @apply relative text-white hover:text-white py-[5px] px-[5px] rounded-sm uppercase mx-[5px] hover:bg-[#00b3b3] ease-in duration-300
+  }
   .home-hover{
     @apply bg-[#00b3b3] text-white
   }
   .hover-item-container{
-    @apply hidden absolute mt-[30px] ml-2 group-hover:block pt-4 bg-[#19686d] text-white rounded-lg group-hover:ease-in group-hover:duration-300
+    @apply hidden absolute mt-[30px] ml-2 group-hover:block pt-4 bg-[#19686d] text-white rounded-lg group-hover:ease-in group-hover:duration-300 
+  }
+  .mobile-hover-item-container{
+    @apply hidden absolute mt-[5px] ml-2 group-hover:block pt-4 bg-[#35bcc5] text-white rounded-lg group-hover:ease-in group-hover:duration-300 
   }
   .route-container{
     @apply flex flex-col justify-center items-center w-full md:w-32 h-20 rounded-sm cursor-pointer  bg-[#f1f8e9] text-[#19686d]

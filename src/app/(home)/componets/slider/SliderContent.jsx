@@ -9,24 +9,43 @@ import { Autoplay, Navigation } from 'swiper/modules';
 
 export default function SliderContent({ slider }) {
     return (
-        <div >
+        <div className='mt-12 w-[100%] md:w-[100%] h-[400px] relative flex justify-evenly items-center overflow-hidden'>
             <Swiper
                 centeredSlides={true}
                 autoplay={{
-                    delay: 4000,
+                    delay: 2500,
                     disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
+                navigation
+                loop={true}
                 modules={[Autoplay, Navigation]}
-                className="swiper"
+                className="w-full h-full mx-0"
             >
                 {
-                    slider.map(item => <SwiperSlide  key={item.id}> <SingleSlider item={item} /></SwiperSlide>)
+                    slider.map(slider => <SwiperSlide key={slider.id}><SingleSlider slider={slider}/></SwiperSlide>)
                 }
             </Swiper>
         </div>
     )
 }
+
+
+// <div >
+//             <Swiper
+//                 centeredSlides={true}
+//                 autoplay={{
+//                     delay: 4000,
+//                     disableOnInteraction: false,
+//                 }}
+//                 pagination={{
+//                     clickable: true,
+//                 }}
+//                 navigation={true}
+//                 modules={[Autoplay, Navigation]}
+//                 className="swiper"
+//             >
+//                 {
+//                     slider.map(item => <SwiperSlide  key={item.id}> <SingleSlider item={item} /></SwiperSlide>)
+//                 }
+//             </Swiper>
+//         </div>

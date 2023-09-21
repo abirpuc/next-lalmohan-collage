@@ -9,6 +9,7 @@ import { getData } from './api/getData'
 import bg from '../../public/background-img.png'
 import LatestNotice from './(home)/componets/LatestNotice'
 import NaVBar from './component/shared/Navbar/NaVBar'
+import Footer from './component/shared/Footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -32,7 +33,7 @@ const backgroundImage = backgroundData.background_img;
         <main>
         {children}
         </main>
-        <footer>footer</footer>
+       <Footer/>
       </body>
     </html>
   )
