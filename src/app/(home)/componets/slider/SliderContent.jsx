@@ -9,7 +9,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 
 export default function SliderContent({ slider }) {
     return (
-        <div className='mt-12 w-[100%] md:w-[100%] h-[400px] relative flex justify-evenly items-center overflow-hidden'>
+        <div className='mt-12 w-[100%] md:w-[100%] h-[200px] md:h-[400px] relative flex justify-evenly items-center overflow-hidden'>
             <Swiper
                 centeredSlides={true}
                 autoplay={{

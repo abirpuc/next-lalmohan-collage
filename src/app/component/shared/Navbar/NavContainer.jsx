@@ -48,7 +48,7 @@ export default function NavContainer({ menuList, subMenu }) {
                         <ul className='sm:mx-auto flex flex-col justify-start'>
                             {
                                 menuList.map(menu =>
-                                    <li key={menu.id} className='flex flex-col justify-start border-b border-gray-500 items-center gap-y-4 flex-wrap'>
+                                    <li key={menu.id} className='flex flex-col justify-start border-b border-gray-500 items-start px-2 gap-y-4 flex-wrap'>
                                         <Link className={`group text-md font-semibold ${menu.menu_label === 'home' ? 'home-hover' : ''} mobile-nav-item`} key={menu.id}
                                             href={menu?.menu_label === 'home' ? `/` : subMenu[menu.menu_id] ? '/' : `/${menu.menu_route}`}
                                         >
